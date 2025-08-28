@@ -30,7 +30,7 @@ class RecoverAccountFragment : Fragment() {
 
     }
 
-    private val nome: String = "teste"
+    private val nome: String = "teste000"
 
     // Parei no passo 31
 
