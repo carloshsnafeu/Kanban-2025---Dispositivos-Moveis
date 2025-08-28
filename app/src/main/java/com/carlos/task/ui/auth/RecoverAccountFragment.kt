@@ -30,10 +30,5 @@ class RecoverAccountFragment : Fragment() {
 
     }
 
-    private val nome: String = "teste000"
-
-    // Parei no passo 31
-
-    // teste do teste
 
 }
