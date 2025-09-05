@@ -19,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- E-mail -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +35,6 @@
             android:layout_marginTop="4dp"
             android:background="@drawable/bg_edit_text"/>
 
-        <!-- Senha -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +52,6 @@
             android:layout_marginTop="4dp"
             android:background="@color/white"/>
 
-        <!-- Botão de Login -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
@@ -65,7 +62,6 @@
             android:background="@drawable/bg_btn"
             android:layout_marginTop="16dp" />
 
-        <!-- Ações secundárias -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,7 +88,6 @@
                 android:textColor="@color/white" />
         </LinearLayout>
 
-        <!-- Loader -->
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="wrap_content"
