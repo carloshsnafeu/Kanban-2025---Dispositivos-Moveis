@@ -48,5 +48,14 @@
         android:id="@+id/homeFragment"
         android:name="com.carlos.task.ui.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fromTaskFragment"
+            app:destination="@id/fromTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fromTaskFragment"
+        android:name="com.carlos.task.ui.FromTaskFragment"
+        android:label="fragment_from_task"
+        tools:layout="@layout/fragment_from_task" />
 </navigation>
