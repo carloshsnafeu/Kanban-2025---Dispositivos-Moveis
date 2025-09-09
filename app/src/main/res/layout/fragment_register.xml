@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -30,14 +29,12 @@
                 android:layout_gravity="center_horizontal" />
         </com.google.android.material.appbar.MaterialToolbar>
 
-
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginHorizontal="25dp">
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -54,7 +51,6 @@
                 android:layout_marginTop="4dp"
                 android:padding="10dp"
                 android:background="@drawable/bg_edit_text"/>
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -73,17 +69,13 @@
                 android:padding="10dp"
                 android:background="@drawable/bg_edit_text"/>
 
-
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Enviar"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/bg_btn"
-                app:backgroundTint="@null"
-                android:textColor="@color/color_default"/>
-
+                style="@style/ButtonTheme" />
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -94,8 +86,6 @@
                 android:indeterminateTint="@color/white"
                 android:visibility="invisible"
                 tools:visibility="visible"/>
-
-
         </LinearLayout>
 
     </LinearLayout>
