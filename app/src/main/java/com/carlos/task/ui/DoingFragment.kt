@@ -71,9 +71,9 @@ class DoingFragment : Fragment() {
 
     private fun getTask() {
         val taskList = listOf(
-            Task("10", "Implementar fluxo de login com validação", Status.DOING),
-            Task("11", "Criar endpoints para listagem de tarefas", Status.DOING),
-            Task("12", "Ajustar cores e tema (Material 3)", Status.DOING),
+            Task("10", "Integrar login social (Google/Facebook)", Status.DOING),
+            Task("11", "Implementar paginação com Paging 3 no feed", Status.DOING),
+            Task("12", "Sincronizar dados em segundo plano com WorkManager", Status.DOING),
         )
         taskAdapter.submitList(taskList)
     }

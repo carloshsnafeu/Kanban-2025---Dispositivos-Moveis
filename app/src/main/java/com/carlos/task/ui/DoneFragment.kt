@@ -71,10 +71,10 @@ class DoneFragment : Fragment() {
 
     private fun getTask() {
         val taskList = listOf(
-            Task("30", "Refatorar adapter para ViewBinding", Status.DONE),
-            Task("31", "Aplicar estilos centralizados nos botões", Status.DONE),
-            Task("32", "Criar layout do item da lista", Status.DONE),
-        )
+            Task("30", "Configurar Navigation Component e Safe Args", Status.DONE),
+            Task("31", "Otimizar listas com DiffUtil e ListAdapter", Status.DONE),
+            Task("32", "Habilitar ProGuard e shrinkResources para release", Status.DONE),
+            )
         taskAdapter.submitList(taskList)
     }
 

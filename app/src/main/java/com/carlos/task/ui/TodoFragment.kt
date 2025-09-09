@@ -73,12 +73,18 @@ class TodoFragment : Fragment() {
 
     private fun getTask() {
         val taskList = listOf(
-            Task("0", "Criar tela para gerenciar usuários e pets cadastrados", Status.TODO),
-            Task("1", "Desenvolver mecanismos de busca e filtros", Status.TODO),
-            Task("2", "Implementar chat em tempo real entre adotantes", Status.TODO),
-            Task("3", "Criar tela para ONGs cadastrarem pets disponíveis para adoção", Status.TODO),
-            Task("4", "Testar e validar segurança (SQL Injection, senhas, permissões)", Status.TODO),
-        )
+            Task("0", "Refatorar arquitetura para MVVM", Status.TODO),
+            Task("1", "Criar tela de onboarding com ViewPager", Status.TODO),
+            Task("2", "Implementar autenticação com Firebase", Status.TODO),
+            Task("3", "Adicionar validação de formulário no cadastro", Status.TODO),
+            Task("4", "Configurar Crashlytics e Analytics", Status.TODO),
+            Task("5", "Implementar modo escuro (Dark Mode)", Status.TODO),
+            Task("6", "Criar componente de Empty State", Status.TODO),
+            Task("7", "Escrever testes unitários para UseCases", Status.TODO),
+            Task("8", "Habilitar cache offline com Room", Status.TODO),
+            Task("9", "Configurar CI simples no GitHub Actions", Status.TODO),
+
+            )
         taskAdapter.submitList(taskList)
     }
 
