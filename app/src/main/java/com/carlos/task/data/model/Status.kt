@@ -1,4 +1,7 @@
 package com.carlos.task.data.model
 
-class Status {
+enum class Status {
+    TODO,
+    DOING,
+    DONE
 }

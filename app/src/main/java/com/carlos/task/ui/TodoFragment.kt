@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.carlos.task.R
+import com.carlos.task.data.model.Status
 import com.carlos.task.data.model.Task
 import com.carlos.task.databinding.FragmentTodoBinding
 import com.fabio.task.ui.adapter.TaskAdapter
