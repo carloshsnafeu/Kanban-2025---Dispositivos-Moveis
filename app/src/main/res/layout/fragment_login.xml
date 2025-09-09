@@ -30,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Digite seu e-mail"
+            style="@style/EditTextTheme"
             android:inputType="textEmailAddress"
             android:padding="10dp"
             android:layout_marginTop="4dp"
@@ -48,6 +49,7 @@
             android:layout_height="48dp"
             android:inputType="textPassword"
             android:hint="Digite sua senha"
+            style="@style/EditTextTheme"
             android:padding="10dp"
             android:layout_marginTop="4dp"
             android:background="@color/white"/>
