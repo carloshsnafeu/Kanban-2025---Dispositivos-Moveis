@@ -5,14 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.carlos.task.R
+import com.carlos.task.data.model.Task
 import com.carlos.task.databinding.FragmentTodoBinding
+import com.fabio.task.ui.adapter.TaskAdapter
 
 
 class TodoFragment : Fragment() {
+
     private var _binding: FragmentTodoBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var taskAdapter: TaskAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,12 +33,52 @@ class TodoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initListeners()
+        initRecyclerViewTask()
+        getTask()
     }
 
-    private fun initListeners() {
+    private fun initListeners(){
         binding.floatingActionButton2.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_fromTaskFragment)
         }
+    }
+
+    private fun initRecyclerViewTask(){
+        taskAdapter = TaskAdapter(requireContext()) {task, option -> optionSelected(task,option)}
+
+        with(binding.recyclerViewTask){
+            layoutManager = LinearLayoutManager(requireContext())
+            setHasFixedSize(true)
+            adapter = taskAdapter
+        }
+    }
+
+    private fun optionSelected(task:Task, option: Int){
+        when (option){
+            TaskAdapter.SELECT_REMOVER -> {
+                Toast.makeText(requireContext(), "Removendo ${task.description}", Toast.LENGTH_SHORT).show()
+            }
+            TaskAdapter.SELECT_EDIT -> {
+                Toast.makeText(requireContext(), "Editando ${task.description}", Toast.LENGTH_SHORT).show()
+            }
+            TaskAdapter.SELECT_DETAILS -> {
+                Toast.makeText(requireContext(), "Detalhes ${task.description}", Toast.LENGTH_SHORT).show()
+            }
+            TaskAdapter.SELECT_NEXT -> {
+                Toast.makeText(requireContext(), "Próximo", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun getTask() {
+        val taskList = listOf(
+            Task("0", "Criar tela para gerenciar usuários e pets cadastrados", Status.TODO),
+            Task("1", "Desenvolver mecanismos de busca e filtros", Status.TODO),
+            Task("2", "Implementar chat em tempo real entre adotantes", Status.TODO),
+            Task("3", "Criar tela para ONGs cadastrarem pets disponíveis para adoção", Status.TODO),
+            Task("4", "Testar e validar segurança (SQL Injection, senhas, permissões)", Status.TODO),
+        )
+        taskAdapter.submitList(taskList)
     }
 
     override fun onDestroyView() {
@@ -39,3 +86,4 @@ class TodoFragment : Fragment() {
         _binding = null
     }
 }
+
