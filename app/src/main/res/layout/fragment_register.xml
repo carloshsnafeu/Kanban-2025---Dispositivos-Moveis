@@ -24,7 +24,7 @@
                 android:id="@+id/tvToolbarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Criar Conta"
+                android:text="@string/text_title_toolbar_register_fragment"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal" />
         </com.google.android.material.appbar.MaterialToolbar>
@@ -39,14 +39,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E-mail"
+                android:text="@string/text_editEmail"
                 android:textColor="@color/white"/>
 
             <EditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Digite seu e-mail"
+                android:hint="@string/hint_edit_email"
                 android:inputType="textEmailAddress"
                 android:layout_marginTop="4dp"
                 android:padding="10dp"
@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Senha"
+                android:text="@string/text_editText"
                 android:textColor="@color/white"
                 android:layout_marginTop="16dp"/>
 
@@ -63,7 +63,7 @@
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="Digite sua senha"
+                android:hint="@string/hint_edit_password"
                 android:inputType="textPassword"
                 android:layout_marginTop="4dp"
                 android:padding="10dp"
@@ -73,7 +73,7 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enviar"
+                android:text="@string/text_button_register_fragment"
                 android:layout_marginTop="16dp"
                 style="@style/ButtonTheme" />
 

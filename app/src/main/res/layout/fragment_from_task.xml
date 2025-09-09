@@ -21,7 +21,7 @@
                 android:id="@+id/tvToolbarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Nova Tarefa"
+                android:text="@string/text_title_toolbar_form_task_fragment"
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:layout_gravity="center" />
@@ -42,7 +42,7 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nova Tarefa"
+                    android:text="@string/text_title_form_task_fragment"
                     android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -51,7 +51,7 @@
                     android:id="@+id/editTextDescricao"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:hint="Informe sua nova Tarefa"
+                    android:hint="@string/hint_edit_description_form_task_fragment"
                     android:padding="10dp"
                     android:background="@drawable/bg_edit_text"
                     app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Status"
+                    android:text="@string/text_status_form_task_fragment"
                     android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/editTextDescricao" />
@@ -84,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:checked="true"
-                        android:text="A fazer"
+                        android:text="@string/status_task_todo"
                         android:theme="@style/MyRadioButton"
                         android:textColor="@color/white" />
 
@@ -93,7 +93,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Fazendo"
+                        android:text="@string/status_task_doing"
                         android:theme="@style/MyRadioButton"
                         android:textColor="@color/white" />
 
@@ -102,7 +102,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Feito"
+                        android:text="@string/status_task_done"
                         android:theme="@style/MyRadioButton"
                         android:textColor="@color/white" />
                 </RadioGroup>
@@ -112,7 +112,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Salvar"
+                    android:text="@string/text_button_form_task_fragment"
                     style="@style/ButtonTheme"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
