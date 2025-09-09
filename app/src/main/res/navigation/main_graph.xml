@@ -52,6 +52,12 @@
         <action
             android:id="@+id/action_homeFragment_to_fromTaskFragment"
             app:destination="@id/fromTaskFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fromTaskFragment2"
+            app:destination="@id/fromTaskFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_autentication2"
+            app:destination="@id/autentication" />
     </fragment>
     <fragment
         android:id="@+id/fromTaskFragment"
