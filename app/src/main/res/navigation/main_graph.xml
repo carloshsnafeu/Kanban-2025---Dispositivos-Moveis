@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/fromTaskFragment"
-        android:name="com.carlos.task.ui.FromTaskFragment"
+        android:name="com.carlos.task.ui.FormTaskFragment"
         android:label="fragment_from_task"
         tools:layout="@layout/fragment_from_task" />
 </navigation>
