@@ -56,6 +56,8 @@ class DoingFragment : Fragment() {
 
     private fun optionSelected(task: Task, option: Int) {
         when (option) {
+            TaskAdapter.SELECT_BACK ->
+                Toast.makeText(requireContext(), "Voltar", Toast.LENGTH_SHORT).show()
             TaskAdapter.SELECT_REMOVER ->
                 Toast.makeText(requireContext(), "Removendo ${task.description}", Toast.LENGTH_SHORT).show()
             TaskAdapter.SELECT_EDIT ->
